@@ -6,9 +6,9 @@
 //  Copyright © 2016 Andrew Palka. All rights reserved.
 //
 
-#import "warningView.h"
+#import "WarningView.h"
 
-@implementation warningView
+@implementation WarningView
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -17,5 +17,11 @@
     // Drawing code
 }
 */
+
+- (IBAction)onColorButtonPress:(UIButton *)sender {
+    [self setHidden:true];
+    [self removeFromSuperview];
+    [self.delegate warningView:self clickedButton:sender];
+}
 
 @end

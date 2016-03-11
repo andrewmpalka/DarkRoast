@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @interface Place : NSObject
+
+@property MKMapItem *mapItem;
+@property float milesDifference;
 
 @end

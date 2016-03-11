@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyManager.h"
 
 @interface DatailViewController : UIViewController
-
+@property MyManager *manager;
 @end

@@ -7,8 +7,13 @@
 //
 
 #import "ListViewController.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "Place.h"
 
 @interface ListViewController ()
+
+@property CLLocationManager *locationManager;
 
 @end
 

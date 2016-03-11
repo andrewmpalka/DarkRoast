@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RootTableViewController.h"
 
-@interface warningView : UIView
+@protocol WarningViewDelegate <NSObject>
 
+-(void)warningView:(id)view clickedButton:(UIButton *)button;
+
+@end
+
+
+@interface WarningView : UIView
+@property (nonatomic, assign) id <WarningViewDelegate> delegate;
 @end

@@ -7,22 +7,21 @@
 //
 
 #import "DatailViewController.h"
+#import "MyManager.h"
 
 @interface DatailViewController ()
-
 @end
 
 @implementation DatailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = _manager.someProperty;
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 /*
 #pragma mark - Navigation

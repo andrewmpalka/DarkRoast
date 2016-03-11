@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MyManager : NSObject
+@interface MyManager : NSObject {
+    NSString *someProperty;
+}
+
+@property NSString *someProperty;
+
++ (id)sharedManager;
 
 @end
